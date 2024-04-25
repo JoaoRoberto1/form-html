@@ -7,11 +7,14 @@
     <title>Form User</title>
     <!-- Importanto um arquivo css -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- Importando um arquivo js (Icones) -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
     <header>
-        
+
         <h2 class="logo">Logo</h2>
 
 
@@ -23,8 +26,39 @@
 
             <button class="btn-login">Login</button>
         </nav>
-
     </header>
+
+    <main>
+        <span class="icons">
+
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" id="Email">
+                    <label for="Email">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="Senha">
+                    <label for="Senha">Senha</label>
+                </div>
+
+                <div class="lembrar-senha">
+                    <input type="checkbox" id="lembrar">
+                    <label for="lembrar">Lembrar-me</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn-login">Login</button>
+
+                <div class="criar-conta">
+                    <p>Não tem uma conta? <a href="#">Criar conta</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
